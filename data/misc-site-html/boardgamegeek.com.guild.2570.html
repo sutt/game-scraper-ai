@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html ng-app="GeekApp" lang="en-US" ng-cloak>
+<head>
+	<meta charset='utf-8'>
+	<meta id="vp" name="viewport" content="width=device-width, initial-scale=1.0">
+			<script>
+			window.addEventListener( 'DOMContentLoaded',  function() {
+				var width = document.documentElement.clientWidth || window.innerWidth;
+				if (width < 960) {
+					var mvp = document.getElementById('vp');
+					// android debugging
+					mvp.setAttribute('content','width=960');
+				}
+			});
+		</script>
+		<meta content='yes' name='apple-mobile-web-app-capable'>
+	<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+
+			<title>Boards &amp; Brews | BoardGameGeek</title>
+	
+	
+<link rel="apple-touch-icon" 	href="https://cf.geekdo-static.com/icons/touch-icon180.png" />
+<link rel="shortcut icon" 		href="https://cf.geekdo-static.com/icons/favicon2.ico" type="image/ico" />
+<link rel="icon" 					href="https://cf.geekdo-static.com/icons/favicon2.ico" type="image/ico" />
+<link rel="search" 				href="/game-opensearch.xml" type="application/opensearchdescription+xml" title="BGG Game Search" />
+<meta name="apple-mobile-web-app-title" content="BGG">
+
+<meta name="theme-color" content="#2e2b47">
+<link rel="preconnect" href="https://api.geekdo.com" />
+
+
+
+
+	<meta property="og:image" content="https://cf.geekdo-static.com/images/opengraph/bgg_opengraph.png" />
+
+
+
+	<meta name="keywords" content="board game, boardgames, boardgame, board, games, game, hobby, boardgamegeek, geek, geekdo">
+
+<script>window.AdSlots = window.AdSlots || {
+	cmd: [],
+	disableScripts: ['gpt'],
+	renderOnFirstLoad: false,
+	divCheck: false
+};</script>
+
+
+						<link rel='stylesheet' type='text/css' href='https://cf.geekdo-static.com/static/geekui_master2_64af10c1d87a5.css'>
+					<link rel='stylesheet' type='text/css' href='https://cf.geekdo-static.com/static/css_master2_64af10b49a6c4.css'>
+			
+	<base href="/">
+
+	<script src="https://kit.fontawesome.com/42d3f5a072.js" crossorigin="anonymous"></script>
+
+<script>
+	var GEEK = GEEK || {};
+	GEEK.adBlock = [];
+	GEEK.adConfig = {"blockleaderboard":null,"blockskyscraper":null,"noadsense":null,"blocksupportdrive":null};
+	GEEK.adSlots = {"dfp-leaderboard":{"name":"boardgame_leaderboard_728x90"},"dfp-skyscraper":{"name":"boardgame_skyscraper_160x600"},"dfp-medrect":{"name":"boardgame_rectangle_300x250"},"dfp-repeater":{"name":"boardgame_home_repeater"},"dfp-medrect-reserved-home":{"name":"boardgame_reserved_home_300x250"},"dfp-leaderboard-lg":{"name":"boardgame_home_hero"},"dfp-home-sidekick":{"name":"boardgame_home_repeater"},"dfp-inline-post":{"name":"boardgame_inline_post"}};
+	GEEK.legacyAds = [];
+	GEEK.googleTargets = null;
+	GEEK.userid = 0;
+	GEEK.domainname = 'boardgamegeek.com';
+	GEEK.domain = 'boardgame';
+	GEEK.geekitemPreload = {};
+	GEEK.geekitemSettings = null;
+	GEEK.geekitemModules = null;
+	GEEK.geekGlobalSettings = {"shutdown_file_ops":"1","shutdown_storeimage_ops":"0","shutdown_edit_avatar":"0","shutdown_file_upload":"0","shutdown_file_download":"0","shutdown_image_upload":"0"};
+	GEEK.geekimageSettings = null;
+	GEEK.legacy = 1;
+	GEEK.apiurlsPrefix = 'https://api.geekdo.com';
+
+	
+		
+		GEEK.apiurls = {
+		'root': '/api',
+		'amazon': '/api/amazon',
+		'files': '/api/files',
+		'geekitems': '/api/geekitems',
+		'images': '/api/images',
+		'threads': '/api/forums/threads',
+	 	'forums': '/api/forums',
+		'videos': '/api/videos',
+		'hotness': '/api/hotness',
+		'dynamicinfo': '/api/dynamicinfo',
+		'subtypeinfo': '/api/subtypeinfo',
+		'geekbay': '/api/geekbay',
+		'geekmarket': '/market/api/v1',
+	    'geekmarketapi': '/api/market',
+		'geeklists': '/api/geeklists',
+		'reviews': '/api/forumreviews',
+		'collections': '/api/collections',
+		'linkeditems': '/api/geekitem/linkeditems',
+		'subscriptions': '/api/subscriptions',
+	    'fans': '/api/fans',
+	    'geekpreviews': '/api/geekpreviews',
+	    'geekpreviewitems': '/api/geekpreviewitems',
+	   	'geekpreviewparentitems': '/api/geekpreviewparentitems',
+		'recs': '/api/geekitem/recs',
+	    'awards': '/api/geekawards',
+		'historicalrankgraph':  '/api/historicalrankgraph',
+		'blueprint_recipes': '/api/blueprints/recipes',
+		'affiliateads' : '/api/affiliateads',
+		'sleevesbycard': '/api/sleevesbycard',
+		'componentlistsbygame': '/api/componentlistsbygame',
+	};
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104725-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('consent', 'default', {
+		'ad_storage': 'denied',
+		'analytics_storage': 'denied',
+		'personalization_storage': 'denied',
+		'wait_for_update': 3000
+		 });
+	gtag('config', 'UA-104725-1', {
+		'cookie_domain': 'boardgamegeek.com',
+		'send_page_view': false
+	});
+</script>
+
+    						<script type='text/javascript' src='https://cf.geekdo-static.com/static/geekangular17_master2_64af10cfacadf.js'></script>
+					<script type='text/javascript' src='https://cf.geekdo-static.com/static/geekui_master2_64af10c1d87a5.js'></script>
+					<script type='text/javascript' src='https://cf.geekdo-static.com/static/js_master2_64af10b435d5d.js'></script>
+					<script type='text/javascript' src='https://cf.geekdo-static.com/static/geekoutputtemplates_master2_64af10d0c5a6a.js'></script>
+					<script type='text/javascript' src='https://cf.geekdo-static.com/static/geekuicommontemplates_master2_64af10d0cd5d7.js'></script>
+			<script>
+	window.geekCookieConsent.gtagReady.then(function() {
+		gtag('event', 'page_view');
+	});
+</script>
+	<!-- why this? -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<!-- Add to main?
+<link rel="apple-touch-icon" 	href="https://cf.geekdo-static.com/icons/appleicon.png" />
+<link rel="shortcut icon" 		href="https://cf.geekdo-static.com/icons/favicon.ico" type="image/ico" />
+<link rel="icon" 					href="https://cf.geekdo-static.com/icons/favicon.ico" type="image/ico" />
+<link rel="search" 				href="/game-opensearch.xml" type="application/opensearchdescription+xml" title="BGG Game Search" />
+-->
+
+
+	<link rel="alternate" type="application/rss+xml" title="Boards & Brews" href="https://boardgamegeek.com/guild/xml/2570">
+
+
+<!--this is used only for GeekMap -->
+
+
+<!-- deal with adsense
+	<script type="text/javascript">
+		window.google_analytics_uacct = "UA-104725-1";
+		var googletag = googletag || { };
+		googletag.cmd = googletag.cmd || [];
+		( function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type  = 'text/javascript';
+			gads.src   = "//www.googletagservices.com/tag/js/gpt.js";
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+		} )();
+
+		adunits = [
+			{
+				name:    'boardgame_button_120x45',
+				size:    [ 120, 45 ],
+				target:  'dfp-button'
+			},
+			{
+				name:    'boardgame_leaderboard_728x90',
+				size:    [ 728, 90 ],
+				target:  'dfp-leaderboard'
+			},
+			{
+				name:    'boardgame_skyscraper_160x600',
+				size:    [ 160, 600 ],
+				target:  'dfp-skyscraper'
+			},
+			{
+				name:    'boardgame_rectangle_300x250',
+				size:    [ 300, 250 ],
+				target:  'dfp-medrect'
+			},
+			{
+				name:    'boardgame_rectangle_300x250',
+				size:    [ 300, 250 ],
+				target:  'dfp-medrect-reserved-home'
+			},
+			{
+				name:    'boardgame_button_120x90',
+				size:    [ 120, 90 ],
+				target:  'dfp-giftguide'
+			}
+		];
+
+		googletag.cmd.push(function() {
+			for( var i=0; i< adunits.length; i++ )
+			{
+				unit = adunits[i];
+				googletag.defineUnit('/1005854/ca-pub-7206761047394129/'+unit.name, unit.size, unit.target).
+				addService(googletag.pubads());
+			}
+
+			
+			googletag.pubads().setTargeting( "subdomain", "all" );
+			googletag.enableServices();
+		} );
+
+	</script>
+-->
+
+<script>
+	function start() {
+		
+	}
+
+	function ondomready() {
+				
+		GEEK.addHandlers();
+		GEEK.recaptchaKey = '6Ldyr6EaAAAAAE0F2hYgtHHqbF6nKPTENAwo6SyU';
+	}
+
+	if( typeof window.addEvent === "function" ) {
+		window.addEvent('domready', function() {
+			ondomready();
+		} );
+	} else {
+		window.addEventListener( "DOMContentLoaded", function() {
+			ondomready();
+	} );
+	}
+	window.onload = start;
+</script>
+
+
+</head>
+
+<body ng-controller="GeekOutput_LayoutCtrl as layoutctrl"
+		class="domain-boardgame"
+
+		ng-class="{ 'has-no-max-width' : layoutctrl.geekitemSettings.fluidlayout }">
+
+
+<div class='d-flex flex-column min-vh-100'>
+        	
+<div id="global-header-outer" class='global-header-outer'
+	  ng-controller="NavCtrl as navctrl"
+	  click-out="navctrl.closeMobileMenu()">
+
+	<geeknav-menu></geeknav-menu>
+</div>
+
+	 
+	
+	<main class='global-body flex-grow-1'
+		  id="mainbody"
+		  ng-class="{ 'has-overlay-sidebar': layoutctrl.showOverlaySidebar, 'has-hidden-fixed-sidebar': layoutctrl.localStorage.hideFixedSidebar }">
+		
+		<a id='mainbodytarget' tabindex="-1"></a>
+
+		<!-- Home King Ad -->
+		
+		<div hide-ad-block="blockleaderboard" >
+			<div class="advertisement-leaderboard">
+				<div class='center-block' ng-dfp-ad="dfp-leaderboard"></div>
+			</div>
+		</div>
+
+		<div class='global-body-content-container container-fluid'>
+							<geekoutput-sidebar deactivate-overlay-sidebar='layoutctrl.deactivateOverlaySidebar' show-overlay-sidebar='layoutctrl.showOverlaySidebar'></geekoutput-sidebar>
+         
+			
+			<div class='global-body-content pending'  ng-class="{'ready': layoutctrl.ready}">
+		
+				<a id='maincontenttarget' tabindex="-1"></a>
+			
+				 								<div class="legacy">
+	<div id="container" class="yui-skin-sam">
+		<div id="maincontent" >
+			<div class='bluebox sf' style='margin-bottom:5px;'>
+	Guilds <a href="/guild/home">Home</a> <span class='dull'>|</span> 
+	<a href="/guild/new">Create</a>
+</div>
+
+<table width='100%' class='moduletable pt5' id='js-guild'>
+	<tr>
+		<th colspan=2>
+			<div class='module_title'>Guild</div>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<table width='100%'>
+				<tr>
+					<td width='100' align='right'><b>Guild:</b></td>
+					<td>
+						<ul class='js-guild_edit'>
+							<li>
+								<span id='name' data-fieldname='name' style='font-size:20px;'>
+									<a href="/guild/view/2570">Boards &amp; Brews</a>
+								</span>
+								<a href="/guild/xml/2570"><img class='icon' title='' alt='RSS Feed' style=''  src='https://cf.geekdo-static.com/images/icons/silkicons/feed.png' /></a>
+							</li>
+						</ul>
+					</td>
+					<td valign='top' align='right'>
+						<div class='togglebutton'
+							  style='width:150px; text-align:center; padding:10px; border:solid 1px #b0b0b0; white-space:nowrap;'>
+							<a href="javascript://" onclick="$('verify').style.display = 'block'; return false;">
+								Join This Guild
+							</a>
+
+							<div style='display:none; margin-top:5px;' id='verify'>
+								<form action='/guild/join/2570' method='post'>
+								<input type='hidden' name='guildid' value='2570'>
+								<input type='hidden' name='action' value='join'>
+								Are you sure? <br><input type='submit' value='Yes'> / <a
+										  href="javascript://" onclick="$('verify').style.display = 'none'; return false;">No</a>
+								</form>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td align='right'><b>Category:</b></td>
+					<td>
+						<ul class='js-guild_edit'>
+							<li>
+								<span id='category' data-fieldname='category'>
+									<a href="/guild/category/store">Game Store</a>
+								</span>
+							</li>
+						</ul>
+					</td>
+					<td align='right'>
+						<table>
+							<tr>
+								<td class='tal'>
+										
+	
+<span id='GSUB_results_guild_2570_0_64b03601a6c99'>
+	<a href="javascript://" onclick="GSUB_Subscribe( {objecttype:		'guild',objectid:		'2570',exclude:			'0',parentex:		'',uniqid:			'64b03601a6c99',subaction:		'subscribe',icon:				'',nopulldown:		''} );">Subscribe</a>&nbsp;<span class='geeksub_pulldown_arrow'><a href="javascript://"
+	onclick="GSUB_Pulldown( {
+										objecttype:		'guild',
+										objectid:		'2570',
+										showall:			'',
+										exclude:			'0',
+										label:			'',
+										uniqid:			'64b03601a6c99'
+									 } );"><img class='icon vam' title='' alt='sub options' style='' onmouseover="this.src='https://cf.geekdo-static.com/images/avatarmenu_over.gif'" onmouseout="this.src='https://cf.geekdo-static.com/images/avatarmenu.gif'" src='https://cf.geekdo-static.com/images/avatarmenu.gif' /></a>
+</span>
+
+<span style='position:relative;'>
+	<span class='geeksub_pulldown ' id='GSUB_pulldown_guild_2570_64b03601a6c99'></span>
+</span>
+</span>
+
+<span id='GSUB_status_guild_2570_0_64b03601a6c99'></span>								</td>								
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+								
+				<tr>
+					<td align='right'><b>Created On:</b></td>
+					<td>2016-03-28 15:19:19</td>
+				</tr>
+
+				<tr>
+					<td align='right'><b>Members:</b></td>
+					<td><a href="/guild/members/2570">27</a></td>
+				</tr>
+
+								<tr>
+					<td align='right'><b>Location:</b></td>
+					<td>
+						<ul class='js-guild_edit'>
+							<li>
+								Addr1: <span id='addr1' data-fieldname='addr1'></span>
+							</li>
+							<li>
+								Addr2: <span id='addr2' data-fieldname='addr2'></span>
+							</li>
+							<li>
+								City: <span id='city' data-fieldname='city'>Manchester</span>
+							</li>
+							<li>
+								State/Province: <span id='state' data-fieldname='state'>New Hampshire</span>
+							</li>
+							<li>
+								Country: <span id='country' data-fieldname='country'>United States</span>
+							</li>
+							<li>
+								Postal Code: <span id='postalcode' data-fieldname='postalcode'>03301</span>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align='right'><b>Manager:</b></td>
+					<td>
+						<ul class='js-guild_edit'>
+							<li>
+								<span id='manager' data-fieldname='manager'>
+									<div class='avatarblock js-avatar ' data-userid='639855' data-username='RepublicofJosh' data-urlusername='republicofjosh'> 
+	<div>Jo Wolbert</div>
+	<div class='username'>(<a href="/user/RepublicofJosh">RepublicofJosh</a>)</div>
+	
+	<div class='location js-location'>United States<br>New Hampshire</div>
+	
+	<div>
+		<table align='center'>
+		<tr>
+			<td>
+						<a href="/users?country=United%20States" class='js-avatar-flag'><img class='icon vam' title='' alt='flag' style=''  src='https://cf.geekdo-static.com/images/flags/16x16/shadow/flag_usa.png' /></a>
+			</td>
+			<td><a href="/geekmail/compose?touser=RepublicofJosh"><img class='icon' title='' alt='msg' style=''  src='https://cf.geekdo-static.com/images/icons/silkicons/email.png' /></a></td>
+			<td><a class='js-showavatarmenu' href="javascript://"><img class='icon' title='' alt='tools' style='' onmouseover="this.src='https://cf.geekdo-static.com/images/avatarmenu_over.gif'" onmouseout="this.src='https://cf.geekdo-static.com/images/avatarmenu.gif'" src='https://cf.geekdo-static.com/images/avatarmenu.gif' /></a>
+			</td>
+		</tr>
+		</table>
+		<span class='js-avatarmenu' style='position:absolute; z-index:300;'></span>
+	</div>
+			
+	
+		
+		
+	
+	 	 
+		
+					<div><a href="/user/RepublicofJosh"><img
+				 
+				data-overtexttype='avatarovertext'
+				width="58" 
+				height="64"
+				src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+				onload="lzld(this)"
+				onerror="lzld(this)"
+				data-frz-src="https://cf.geekdo-static.com/avatars/avatar_id88890.jpg"
+				alt="Avatar"></a>
+		</div>
+	
+		
+			<div class='badgeyears'>
+	<a href="/support"  class='js_badgelink'
+		onmouseover="GAV_ShowBadge( this ); return overlib( 'This user supports the website - Click for more info.', WRAP );"
+		onmouseout="return nd();">
+	<span class='oddicon patron'></span><span class='sr-only'>Patron Badge for 2016</span><span class='oddicon year_16_num num last' data-year='16'></span>	</a>
+</div>
+
+		
+	<div ><a href="/microbadge/20956"><img alt='Microbadge: Battlestar Galactica - I play the Admiral' onmouseover="return overlib('Battlestar Galactica - I play the Admiral', WRAP );" onmouseout="return nd();" title=''src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="onload="lzld(this)"onerror="lzld(this)"class='mbimg'data-frz-src="https://cf.geekdo-static.com/mbs/mb_20956_0.png"></a><a href="/microbadge/29811"><img alt='Microbadge: Russian Railroads fan' onmouseover="return overlib('Russian Railroads fan', WRAP );" onmouseout="return nd();" title=''src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="onload="lzld(this)"onerror="lzld(this)"class='mbimg'data-frz-src="https://cf.geekdo-static.com/mbs/mb_29811_0.png"></a><a href="/microbadge/904"><img alt='Microbadge: Philadelphia Flyers fan' onmouseover="return overlib('Philadelphia Flyers fan', WRAP );" onmouseout="return nd();" title=''src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="onload="lzld(this)"onerror="lzld(this)"class='mbimg'data-frz-src="https://cf.geekdo-static.com/mbs/mb_904_0.gif"></a><a href="/microbadge/2828"><img alt='Microbadge: 5 Year Geek Veteran' onmouseover="return overlib('5 Year Geek Veteran', WRAP );" onmouseout="return nd();" title=''src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="onload="lzld(this)"onerror="lzld(this)"class='mbimg'data-frz-src="https://cf.geekdo-static.com/mbs/mb_2828_0.gif"></a><a href="/microbadge/3775"><img alt='Microbadge: Tom Waits fan' onmouseover="return overlib('Tom Waits fan', WRAP );" onmouseout="return nd();" title=''src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="onload="lzld(this)"onerror="lzld(this)"class='mbimg'data-frz-src="https://cf.geekdo-static.com/mbs/mb_3775_0.gif"></a></div>
+</div>
+
+								</span>
+							</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td align='right'><b>Collections:</b></td>
+					<td><a href="/guild/collection/2570?own=1">Browse</a></td>
+				</tr>
+				
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table width='100%' class='moduletable mt10 pt5'>
+	<tr>
+		<th>
+			<div class='module_title'>Description 
+									<span class='modulecommands' style='margin-left:1em;'>
+						<a href="/wiki/edit/guild:2570">Edit</a>
+						<span class='dull'>|</span>
+						<a href="/wiki/history/guild:2570">History</a>
+					</span>
+							</div>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class='wiki'>
+				
+				<p>Boards &amp; Brews is a new Board Game Cafe partnered with Guilt Free Bakery in New Hampshire.  So far the Cafe is just a concept and a business plan.  Keep your eyes out for the upcoming Kickstarter!  Follow us on various social media!</p>
+
+<p>Thanks all.</p>
+
+
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table width='100%' class='moduletable mt10 pt5'>
+	<tr>
+		<th>
+			<div class='module_title'>More Information		
+				<span class='modulecommands' style='margin-left:1em;'>
+					<a href="/wiki/edit/guild:2570:moreinfo">Edit</a> <span class='dull'>|</span> 
+					<a href="/wiki/history/guild:2570:moreinfo">History</a>
+				</span>
+			</div>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class='wiki'>
+			<p>Boards &amp; Brews Game Cafe is a collaborative effort of a few friends with very few funds starting their own business.</p>
+
+<p>Website: <a rel="nofollow" href="https://boardsandbrewsnh.com/" onclick="window.open(this.href, '_blank'); return false;">https://boardsandbrewsnh.com/</a></p>
+
+<p><a rel="nofollow" href="http://www.instagram.com/Boards_and_Brews_NH" onclick="window.open(this.href, '_blank'); return false;">Instagram</a></p>
+
+<p><a rel="nofollow" href="https://twitter.com/boardsbrewsnh" onclick="window.open(this.href, '_blank'); return false;">Twitter</a></p>
+
+<p><a rel="nofollow" href="https://www.facebook.com/Boards-Brews-476559802554989/" onclick="window.open(this.href, '_blank'); return false;">Facebook</a></p>
+
+
+			</div>
+		</td>
+	</tr>
+</table>
+
+<div class='mt10'>
+	<div ng-controller="ModuleCtrl" ng-cloak>
+	<input type="hidden" ng-init="subdomain_data.subdomainname=''">
+	<input type="hidden" ng-init="subdomain_data.subdomains=null">
+	<input type="hidden" ng-init="subdomain_data.subdomain=''">
+	<input type="hidden" ng-model="module.action" 							ng-init="module.action='/forum/module'">
+	<input type="hidden" ng-model="hidecontent" 								ng-init="hidecontent=''">
+	<input type="hidden" ng-model="module.params.version" 				ng-init="module.params.version='v5'">
+	<input type="hidden" ng-model="module.params.ajax" 					ng-init="module.params.ajax=1">
+	<input type="hidden" ng-model="module.params.pageid" 					ng-init="module.params.pageid=1">
+	<input type="hidden" ng-model="module.params.nosession" 				ng-init="module.params.nosession=1">
+	<input type="hidden" ng-model="module.params.moduleid" 				ng-init="module.params.moduleid=''">
+	<input type="hidden" ng-model="module.params.showcount" 				ng-init="module.params.showcount='25'">
+	<input type="hidden" ng-model="module.params.objecttype" 			ng-init="module.params.objecttype='guild'">
+	<input type="hidden" ng-model="module.params.assocItemType"       ng-init="module.params.assocItemType ='guilds'">
+	<input type="hidden" ng-model="module.params.objecttypes" 			ng-init="module.params.objecttypes=''">
+	<input type="hidden" ng-model="module.params.objectid" 				ng-init="module.params.objectid='2570'">
+	<input type="hidden" ng-model="module.params.objectids" 				ng-init="module.params.objectids=''">
+	<input type="hidden" ng-model="module.params.sort" 					ng-init="module.params.sort='active'">
+	<input type="hidden" ng-model="module.params.forumid" 				ng-init="module.params.forumid='0'">
+	<input type="hidden" ng-model="module.params.groupid" 				ng-init="module.params.groupid=''">
+	<input type="hidden" ng-model="module.params.subtype" 				ng-init="module.params.subtype=''">
+	<input type="hidden" ng-model="module.params.subtypes" 				ng-init="module.params.subtypes=''">
+	<input type="hidden" ng-model="module.params.subdomainid" 			ng-init="module.params.subdomainid=''">
+	<input type="hidden" ng-model="module.params.frontpin" 				ng-init="module.params.frontpin=''">
+	<input type="hidden" ng-model="module.params.filterforums" 			ng-init="module.params.filterforums=''">
+	<input type="hidden" ng-model="module.params.filtergroups" 			ng-init="module.params.filtergroups=''">
+	<input type="hidden" ng-model="module.params.displayforums" 		ng-init="module.params.displayforums=''">
+	<input type="hidden" ng-model="module.params.moduletitle" 			ng-init="module.params.moduletitle='Forums'">
+	<input type="hidden" ng-model="module.params.moduletype" 			ng-init="module.params.moduletype=''">
+	<input type="hidden" ng-model="module.params.linkedforum_index"	ng-init="module.params.linkedforum_index=''">
+	<input type="hidden" ng-model="module.params.hidecontrols" 			ng-init="module.params.hidecontrols=''">
+	<input type="hidden" ng-model="module.params.showobjectlink" 		ng-init="module.params.showobjectlink=''">
+	<input type="hidden" ng-model="module.params.showlinkedforums" 	ng-init="module.params.showlinkedforums=''">
+	<input type="hidden" ng-model="module.params.moduleclass"			ng-init="module.params.moduleclass=''">
+	<input type="hidden" ng-model="module.params.postingallowed"		ng-init="module.params.postingallowed='1'">
+	<input type="hidden" ng-model="module.params.showbrowse"				ng-init="module.params.showbrowse='1'">
+	<input type="hidden" ng-model="module.params.showsearch"				ng-init="module.params.showsearch='1'">
+	<input type="hidden" ng-model="module.params.showeditfrontpage"	ng-init="module.params.showeditfrontpage=0">
+
+	<a name="forums"></a>
+	
+		<div class='status' ng-if="loading">Updating...</div>
+		<table width='100%' class='moduletable' ng-class="module.params.moduleclass">
+			<tr>
+				<td>
+					<table width='100%'>
+						<tr>
+							<th width='16'><img class='icon' title='' alt='Thumbs Up' style=''  src='https://cf.geekdo-static.com/images/thumbs-up_sm.gif' /></th>
+							<th width='16'>
+								<img alt="{{hidecontent && 'Display' || 'Hide'}} Content" ng-click="hidecontent = !hidecontent" class="togglebox" ng-src="{{hidecontent && 'https://cf.geekdo-static.com/images/icons/add2.gif' || 'https://cf.geekdo-static.com/images/icons/minus2.gif'}}">
+							</th>
+							<th>
+								<table width='100%'>
+									<tr>
+										<td class='module_title'>
+											{{data.config.moduletitle}}
+
+											<span class='ml10 modulecommands' ng-if="module.params.showlinkedforums">
+												<label for="thread_linkedforum_relationship_selector">Relationship:</label>
+												<select id="thread_linkedforum_relationship_selector" ng-model="module.params.linkedforum_index"
+														  ng-options="lf.linkedforum_index as lf.title for lf in data.linkedforums">
+												</select>
+											</span>
+										</td>
+										<td align='right'>
+											<div class='modulecommands' ng-if="module.params.showeditfrontpage">
+												<span ng-if="subdomain_data.subdomainname">{{subdomain_data.subdomainname}}:</span>
+												<select
+														  ng-if="subdomain_data.subdomains"
+														  ng-model="subdomain_data.subdomain"
+														  ng-options="sub.subdomain as sub.name for sub in subdomain_data.subdomains"
+												></select>
+												[<a href="/geekcentral/edit">Edit Front Page {{subdomain}}</a>]
+											</div>
+											<div class='modulecommands' ng-if="data.config.showcontrols">
+												<span ng-repeat="sort in data.config.sorttypes">
+													<a ng-class="{selected:module.params.sort == sort.type}"
+													   ng-click="setSort(sort.type)">{{sort.name}}</a>
+													  <span ng-if="!$last" class="dull">|</span>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<table width='100%'>	
+									<tr ng-if="!module.params.spotlight">
+										<td class='modulecommands'>
+											<span ng-if="data.config.showbrowse">
+												<span ng-if="data.config.browselink">
+													[<span ng-bind-html="data.config.browselink"></span>]
+												</span>
+												[<a ng-href="/forums/{{module.params.objecttype}}/{{module.params.objectid}}">Forums&nbsp;&raquo;</a>]
+											</span>
+											<span ng-if="data.config.showpost && !data.config.forumuid">
+												[<a ng-href="/thread/new?assocItemType={{module.params.assocItemType}}&assocItemId={{module.params.objectid}}">Post&nbsp;&raquo;</a>]
+											</span>
+											<span ng-if="data.config.showpost && data.config.forumuid">
+												[<a ng-href="/thread/new?assocItemType={{module.params.assocItemType}}&assocItemId={{module.params.objectid}}&forumuid={{data.config.forumuid}}">Post&nbsp;&raquo;</a>]
+											</span>
+											<span ng-if="data.config.showsearch">
+												[<a ng-href="/forum/search/{{module.params.objecttype}}/{{module.params.objectid}}">Search&nbsp;&raquo;</a>]
+											</span>
+
+											<div class='mt5'>
+												<span ng-repeat="forum in data.forums">
+													<a ng-class="{selected:module.params.forumid == forum.forumid}"
+													   ng-click="setForumid(forum.forumid,forum.title)">{{forum.title}}</a>
+													<span ng-if="!$last" class="dull">|</span>
+												</span>
+
+												<select ng-if="data.config.showsubdomains"
+														  ng-model="module.params.subdomainid"
+														  ng-options="sd.subdomainid as sd.name for sd in data.subdomains">
+												</select>
+											</div>
+										</td>
+										<td align='right' colspan=2>
+											<div class='pages' ng-if="data.config.showcontrols">
+												<a ng-if="module.params.pageid>1" ng-click="pageToFirst()">1</a>
+												<a ng-if="module.params.pageid>1" ng-click="pageBackward()">&laquo;</a>
+												Pg. {{module.params.pageid}}
+												<a ng-click="pageForward()">&raquo;</a>
+												<a ng-if="data.config.endpage" class='btn-link' ng-click="setPage(data.config.endpage)">{{data.config.endpage}}</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</th>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td ng-show="!hidecontent">
+					<table width="100%" class="innermoduletable geekmodule">
+						<tr ng-show="!loading && data && (data.threads.length<=0)">
+							<td>No threads found</td>
+						</tr>
+
+						<tr ng-repeat="thread in data.threads" class='moduleRow'>
+							<td width='16' align='right'>
+								{{thread.numrecommend}}
+							</td>
+							<td>
+								<span class='objectlink' 	ng-if="data.config.showobjectlink" 	ng-bind-html="thread.objectlink"></span>
+								<span class='forumlink' 	ng-if="data.config.showforumlink" 	ng-bind-html="thread.forumlink"></span>
+
+								<a ng-href="/thread/{{thread.threadid}}/{{thread.linkname}}">{{thread.subject}}</a>
+								<span class='pager' ng-bind-html="thread.pagination"></span>
+							</td>
+							<td width='50' class='nw' ng-if="!module.params.moduleid">
+								<div ng-switch on="module.params.sort">
+									<span ng-switch-when="active" class='sf'>Last Post {{thread.lastpostdate|truncate:"10"}}</span>
+									<span ng-switch-default 		class='sf'>Posted {{thread.postdate|truncate:"10"}}</span>
+								</div>
+							</td>
+							<td width='50'>
+								<span ng-if="::thread.user.username" class='sf'><a ng-href="/user/{{thread.user.username}}">{{thread.user.username|truncate:"10"}}</a></span>
+							</td>
+							<td width='16' align='right'>
+								<span class='sf'>{{thread.numposts-1}}</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	
+</div>
+
+</div>
+
+
+<div id='status_6' class='status'></div>
+<div id='results_6' class='mt10'>
+	
+<div class="legacy">
+<a name='images'></a>
+<table width='100%' cellpadding=0 cellspacing=0 class='moduletable' border=0>
+	<tr>
+		<td>
+			<table width='100%' cellpadding=0 cellspacing=0>
+				<tr>
+					<th width='16'>
+													<span id='toggle_6'><a href="javascript://" onclick="Toggle('module_6','toggle_6');"><img alt="Hide Content" src='https://cf.geekdo-static.com/images/icons/minus2.gif' border=0 class='togglebox'>
+</a></span>
+											</th>
+					<th>
+						<table width='100%' cellpadding=0 cellspacing=0 >
+								<tr>
+									<td>
+										<div class='module_title'>
+																							Images
+																					</div>
+									</td>
+									<td align='center' class='modulecommands'>
+																			</td>
+									<td align='right' class='modulecommands'>
+																				<a 											href="javascript://" onclick="MOD_Module_Image( 
+										{
+											action:			'imagemodule',  
+											objecttype: 	'guild',
+											objectid: 		'2570',
+											gallery: 		'all',	
+											sort:				'hot',
+											instanceid:		'6',
+											linktype: 		'',
+											showcount:		'15',
+											rowsize:			'5',
+											hidegalleries:	'1',
+											hidecontrols:	'',
+											hidesort:		'',
+											moduletitle:	'',
+											pageid:			'1'										
+										} );">Hot</a> <span class='dull'>|</span> 
+										<a class='selected'											href="javascript://" onclick="MOD_Module_Image( 
+										{
+											action:			'imagemodule',  
+											objecttype: 	'guild',
+											objectid: 		'2570',
+											gallery: 		'all',	
+											sort:				'recent',
+											instanceid:		'6',
+											linktype: 		'',											
+											showcount:		'15',
+											rowsize:			'5',
+											hidegalleries:	'1',
+											hidecontrols:	'',
+											hidesort:		'',
+											moduletitle:	'',
+											pageid:			'1'										
+										} );">Recent</a>
+																			</td>				
+								</tr>
+							<tr>
+								<td class='modulecommands'>				
+														
+																					[<a href="/images/guild/2570/boards-brews">Browse&nbsp;&raquo;</a>]
+																															[<a href="/image/new/guild/2570">Upload&nbsp;&raquo;</a>]
+																																						</td>								
+								
+								<td></td>
+								
+								<td align='right'>
+									<div class='pages'>
+																					Pg.&nbsp;1 of 1
+																			</div>									
+								</td>
+															</tr>																			
+						</table>   
+					</th>
+				</tr>	
+			</table>
+		</td>
+	</tr>	
+
+	<tr>
+	<td>
+		<div id='module_6' >
+			<table width='100%' class='pt5'>
+				<tr>				
+											<td width='20%' align='center'>
+							<a   href="/image/3040927/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/bUAhSnL9CDFrjURFyZrZhw__micro/img/QseCOnHuLEL-331O3HX5kmi2xqs=/fit-in/64x64/filters:strip_icc()/pic3040927.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966515/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/TUgfkC5STVSExH82pNx7ng__micro/img/ITjW7BYSAv8rTyMSXY0y69h_OMc=/fit-in/64x64/filters:strip_icc()/pic2966515.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966514/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/4mRCRVmYYnZSqDnSZzl_Lg__micro/img/gX0d8JoLKWeim4JtEenaCk5wJTg=/fit-in/64x64/filters:strip_icc()/pic2966514.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966513/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/iyqXZm0ugYCaFxEGLnkpkA__micro/img/NlCh3Gumy9gQZyssQmhaoENmWZk=/fit-in/64x64/filters:strip_icc()/pic2966513.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966512/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/ncQS7Q81JQC-PMa8j7-bPQ__micro/img/S-HRzHt0pxOvbRv6yTZg7ITnMyM=/fit-in/64x64/filters:strip_icc()/pic2966512.jpg"></a>
+						</td>
+												</tr><tr>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966511/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/0tQcEc7rw_QDwUS9UO4oMQ__micro/img/3NnQjt6XBAExCtQSfezNwrJK0uA=/fit-in/64x64/filters:strip_icc()/pic2966511.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966510/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/YhMVYDR0FDLqUvt3h-EVXw__micro/img/wbwDBkKrnKOE-oIWL13u3900Qfo=/fit-in/64x64/filters:strip_icc()/pic2966510.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966509/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/ysbd61lXmHMTFu43XrZDjQ__micro/img/hQh1C0J287EBTaK5sT5_g0UFiIU=/fit-in/64x64/filters:strip_icc()/pic2966509.jpg"></a>
+						</td>
+																	<td width='20%' align='center'>
+							<a   href="/image/2966508/boards-brews" ><img alt="In guild Boards & Brews"   src="https://cf.geekdo-images.com/6YjEQGIe0uJrAaRzhOOM_Q__micro/img/cgudy18jDflRn8MBRyNYpD7mYAo=/fit-in/64x64/filters:strip_icc()/pic2966508.jpg"></a>
+						</td>
+															</tr>
+			</table>
+		</div>
+	</td>
+	</tr>
+</table>
+</div>
+
+</div>
+
+
+<a name="calendar"></a>
+<table width='100%' class='moduletable' style='margin-top:1em;'>
+	<tr>
+		<th>Calendars
+			<span class ='sf'>[<a href="/calendar/create/guild/2570">Create</a>]</span>
+			<span class ='sf'>[<a href="/calendar/add/guild/2570">Add existing</a>]</span>
+			<span class ='sf'>[<a href="/calendar/bydistance">Find calendars near you</a>]</span>		
+		</th>
+	</tr>
+	<tr>
+		<td>
+	<table class="forum_table" width="100%">
+		<tr>
+					</tr>
+			<tr>
+						<td style="background: #668CD9;" >
+				<div class='sf calendardesc' id="more1712">
+				 <a style="color:white; cursor:pointer;">Boards &amp; Brews &raquo;</a> 
+					<div id="moretarget1712" style='display:none;'>
+						<div>Summary: Events</div>
+						<div>Where: Manchester, NH 03301 US</div>	
+						<div style="color:white;"><a href="/calendar/1712" style="color:white;">view</a>	
+						
+						</div>					
+				</div>
+			</td>
+					</tr>
+		</table>
+	<iframe src="//www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r1rhoi69a42rn4lmcj43spojd8%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America/New_York"
+		style=" border-width:0; " width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+<script type="text/javascript" charset="utf-8">
+
+window.addEvent('domready', function()
+{
+	$$('div.calendardesc').each(function(div)
+	{
+		var link = div.getElement('a');
+		var block = link.getNext();
+		block.setStyle('display', 'block');
+		var fx = new Fx.Slide(block);
+
+		fx.hide();
+		
+		link.addEvent('click', function()
+		{	
+				
+			fx.toggle();
+		} );
+	});
+});
+
+</script>
+</td>
+	</tr>
+</table>
+
+
+
+
+			<div id="legacy_modal"></div>
+		</div>
+	</div>
+</div>
+
+				<div class='global-body-content-secondary'>
+									</div>
+			</div>
+		</div>
+
+	</main>
+			<geekoutput-footer></geekoutput-footer>
+	</div>
+
+
+
+
+</body>
+</html>
